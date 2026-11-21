@@ -1,0 +1,44 @@
+{
+  "name": "djassa-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "start": "node server.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.3.5",
+    "@vitejs/plugin-react": "5.2.0",
+    "dotenv": "17.4.2",
+    "express": "4.22.3",
+    "leaflet": "1.9.4",
+    "lucide-react": "0.546.0",
+    "pg": "8.23.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "tailwindcss": "4.3.5",
+    "tsx": "4.23.15",
+    "vite": "6.4.6",
+    "ws": "8.23.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@types/express": "4.17.25",
+    "@types/node": "22.20.5",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/supertest": "7.2.1",
+    "@types/ws": "8.18.2",
+    "jsdom": "31.0.1",
+    "supertest": "7.3.2",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}

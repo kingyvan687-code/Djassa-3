@@ -1,0 +1,21 @@
+{
+  "restoredAt": "2026-11-15T18:15:18.612Z",
+  "backupId": "bkp-20261115-117902",
+  "safetyBackupId": "bkp-20261115-4ba4b6",
+  "mode": "complete",
+  "domains": [
+    "accounts_profiles",
+    "shops_products",
+    "orders",
+    "messages_discussions",
+    "deliveries",
+    "companies_drivers",
+    "wallets",
+    "transactions_commissions",
+    "withdrawals_refunds",
+    "business_settings",
+    "activity_history",
+    "documents_pod_media"
+  ],
+  "actorName": "Kouassi Yves (Super Admin) + Bamba Issouf (Agent Sécurité)"
+}

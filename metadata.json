@@ -1,0 +1,12 @@
+{
+  "name": "DJASSA",
+  "description": "Marketplace sociale ivoirienne multi-espaces : Client, Vendeur, Livreur, Entreprise de livraison et Administrateur.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

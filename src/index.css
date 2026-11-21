@@ -1,0 +1,109 @@
+@import "tailwindcss";
+@source not "../server";
+@source not "../dist";
+@source not "../tests";
+
+@layer base {
+  :root {
+    --app-accent: #FF6321;
+    --app-bg: #0A0A0A;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #0A0A0A;
+  }
+
+  body {
+    color: #FFFFFF;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+  }
+}
+
+/* Hide scrollbars for slick mobile look */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Safe area padding utilities for mobile */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 16px);
+}
+
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 16px);
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(18, 18, 18, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Dark mode filter for Leaflet map tiles (crisp, high-contrast, free of watermarks) */
+.dark-map-tiles {
+  filter: brightness(0.6) invert(1) contrast(2.4) hue-rotate(205deg) saturate(0.2);
+}
+
+/* Leaflet Custom Profile Marker Reset */
+.leaflet-div-icon,
+.leaflet-div-icon.custom-map-profile-marker,
+.leaflet-div-icon.custom-seller-pin,
+.leaflet-div-icon.custom-client-pin,
+.leaflet-div-icon.custom-driver-pin {
+  background: transparent !important;
+  border: none !important;
+  overflow: visible !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #18181B !important;
+  color: #FFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) !important;
+}
+
+.leaflet-popup-tip {
+  background: #18181B !important;
+}
+
+.djassa-reduce-motion *,
+.djassa-reduce-motion *::before,
+.djassa-reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+.djassa-font-small {
+  font-size: 13px;
+}
+
+.djassa-font-normal {
+  font-size: 14px;
+}
+
+.djassa-font-large {
+  font-size: 16px;
+}
+
+.djassa-font-xlarge {
+  font-size: 18px;
+}
